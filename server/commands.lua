@@ -176,7 +176,7 @@ lib.addCommand('car', {
     restricted = "qbox.admin"
 }, function(source, args)
     if not args then return end
-    QBCore.Functions.CreateVehicle(source, args[1], nil, true)
+    QBCore.Functions.CreateVehicle(source, args.model, nil, true)
 end)
 
 lib.addCommand('dv', {
